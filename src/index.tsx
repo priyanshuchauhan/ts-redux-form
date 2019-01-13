@@ -4,8 +4,11 @@ import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
+(module as any).hot.accept();
+
 ReactDOM.render(
   <App />,
   document.getElementById('root') as HTMLElement
 );
+
 registerServiceWorker();
